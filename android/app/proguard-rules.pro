@@ -8,3 +8,8 @@
 #   http://developer.android.com/guide/developing/tools/proguard.html
 
 # Add any project specific keep options here:
+
+/**
+ * 在release发行版中启用Proguard来减小 to shrink the Java bytecode in release builds.
+ */
+def enableProguardInReleaseBuilds = true
