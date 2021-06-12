@@ -1,2 +1,0 @@
-# CloudReader
-react-native + dva
