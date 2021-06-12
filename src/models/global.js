@@ -1,6 +1,7 @@
 import { namespace } from '../utils/constants';
 import { getBookConfig } from '../services';
 import store from '../store/global';
+import bookList from '../../mock/book_list.json';
 
 export default {
   namespace: namespace.GLOBAL,
@@ -20,10 +21,11 @@ export default {
     *init(_, { call, put }) {
       const { data } = yield call(getBookConfig);
       console.log(data);
+      const mockConfig = [bookList];
       yield put({
         type: 'setState',
         payload: {
-          bookConfig: data,
+          bookConfig: mockConfig,
         },
       });
     },
@@ -31,6 +33,9 @@ export default {
   reducers: {
     setState(state, { payload }) {
       return { ...state, payload };
+    },
+    setActiveMenu(state, { activeMenu }) {
+      return { ...state, activeMenu };
     },
   },
 };

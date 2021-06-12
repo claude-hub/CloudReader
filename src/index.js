@@ -2,6 +2,7 @@ import dva from 'dva';
 import { createBrowserHistory } from 'history';
 import router from './router';
 import global from './models/global';
+import './index.less';
 
 // 1. Initialize
 const app = dva({

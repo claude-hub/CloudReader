@@ -12,7 +12,6 @@ module.exports = {
     'value-keyword-case': null,
     'rule-empty-line-before': ['always', { except: ['after-single-line-comment', 'first-nested'] }],
     'at-rule-no-unknown': null,
-    'scss/at-rule-no-unknown': true,
   },
   ignoreFiles: ['node_modules/**/*', 'build/**/*', 'dist/**/*'],
 };
