@@ -21,7 +21,7 @@ export default {
     *init(_, { call, put }) {
       const { data } = yield call(getBookConfig);
       console.log(data);
-      const mockConfig = [bookList];
+      const mockConfig = bookList;
       yield put({
         type: 'setState',
         payload: {
