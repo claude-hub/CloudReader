@@ -2,6 +2,12 @@ const namespace = {
   GLOBAL: 'global',
 };
 
+const ICON_SIZE = {
+  normal: 20,
+  small: 14,
+  large: 28,
+};
+
 const MENU_ENUM = {
   bookshelf: 'bookshelf',
   bookCity: 'bookCity',
@@ -26,4 +32,4 @@ const footerMsg = [
   },
 ];
 
-export { namespace, MENU_ENUM, footerMsg };
+export { namespace, MENU_ENUM, footerMsg, ICON_SIZE };

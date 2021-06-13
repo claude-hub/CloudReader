@@ -11,7 +11,7 @@ const Routers = ({ app, history }) => {
       path: '/',
       exact: true,
       // models: () => [import('./models/home')],
-      component: () => import('./routes/home'),
+      component: () => import('./routes/bookshelf'),
     },
   ];
 
